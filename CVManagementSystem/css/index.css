@@ -1,0 +1,858 @@
+/*html,body{
+    height:100%;
+    font-family: sans-serif;
+}*/
+/*body  {
+    background:url("../images/amazing-sky.jpg") center center;
+    background-size:cover;
+    margin:0;
+    padding:0;
+    position:relative;
+}*/
+
+body {
+    background: url("../images/bg.jpg") scroll center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*页眉*/
+
+#header {
+    width: 100%;
+    height: 56px;
+    background-color: #333333;
+}
+
+#header .menu {
+    width: 80%;
+    height: 56px;
+    margin: 0 auto;
+}
+
+#header .menu .logo {
+    width: 160px;
+    height: 56px;
+    cursor: pointer;
+    float: left;
+}
+
+#header .menu .logo .logeImg {
+    width: 56px;
+    height: 56px;
+    float: left;
+    background: url("../images/turnsolenew.png");
+}
+
+#header .menu .logo .logoName {
+    display: inline-block;
+    width: 100px;
+    height: 56px;
+    float: left;
+}
+
+#header .menu .logo .logoName p {
+    color: #fefefe;
+    font-size: 20px;
+    line-height: 56px;
+}
+
+#header .menu .user-center {
+    height: 56px;
+    width: 100px;
+    float: right;
+}
+
+#header .menu .user-center i {
+    display: inline-block;
+    height: 14px;
+    width: 1px;
+    background-color: #fefefe;
+}
+
+#header .menu .user-center p {
+    display: inline-block;
+    height: 56px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 56px;
+    cursor: pointer;
+}
+
+#content {
+    width: 100%;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*主页面样式*/
+
+#content .main {
+    text-align: center;
+    position: absolute;
+    width: 500px;
+    top: 28%;
+    display: block;
+}
+
+#content .main h1 {
+    font-size: 100px;
+    color: #fefefe;
+}
+
+#content .main .btn {
+    height: 50px;
+    width: 300px;
+    background-color: #0567a2;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -28%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#content .main .btn p {
+    line-height: 50px;
+    color: #fefefe;
+    font-size: 25px;
+}
+
+/*登陆页面样式*/
+
+#content .landing {
+    width: 350px;
+    height: 450px;
+    background-color: rgba(204,204,204,0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+}
+
+#content .landing .top {
+    width: 100%;
+    height: 50px;
+    background-color: #8c8c8c;
+}
+
+#content .landing .top p {
+    line-height: 50px;
+    font-size: 22px;
+    text-align: center;
+    color: #000000;
+    opacity: 1;
+}
+
+#content .landing .bottom {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#content .landing .bottom .user {
+    margin: 40px auto 30px auto;
+    width: 270px;
+    height: 42px;
+    background-color: #dddddd;
+    border-radius: 8px;
+    opacity: 0.5;
+}
+
+#content .landing .bottom .password {
+    margin: 0 auto 30px auto;
+}
+
+#content .landing .bottom .verification {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#content .landing .bottom .verification .left  {
+    display: inline-block;
+    width: 148px;
+    height: 42px;
+    overflow: hidden;
+    /*background-color: orangered;*/
+    float: left;
+}
+
+#content .landing .bottom .verification .left .userName {
+    width: 98px;
+}
+
+#content .landing .bottom .verification .right {
+    display: inline-block;
+    width: 116px;
+    height: 42px;
+    /*background-color: yellow;*/
+    float: right;
+}
+
+#content .landing .bottom .verification .right .code {
+    display: inline-block;
+    height: 42px;
+    width: 74px;
+    background-color: #000;
+    float: left;
+}
+
+#content .landing .bottom .verification .right .userIcon {
+    float: right;
+    background: url("../images/刷新.png") no-repeat;
+    cursor: pointer;
+}
+
+#content .landing .bottom .sub {
+    margin: 0 auto;
+}
+
+#content .landing .bottom .job {
+    height: 30px;
+    width: 270px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+
+#content .landing .bottom .jobName  {
+    margin-right: 8px;
+}
+
+#content .landing .bottom .appendix p {
+    margin: 5px;
+    display: inline-block;
+    font-size: 12px;
+    color: #1c4b66;
+    line-height: 42px;
+    cursor: pointer;
+}
+
+#content .landing .bottom .appendix {
+    height: 42px;
+    width: 270px;
+}
+
+#content .landing .bottom .appendix .p1 {
+    float: left;
+}
+
+#content .landing .bottom .appendix .p2 {
+    float: right;
+}
+
+#content .landing .bottom .sub .submit {
+    border: none;
+    opacity: 1;
+    background-color: #0094ff;
+    color: black;
+    height: 42px;
+    width: 270px;
+    font-size: 22px;
+    line-height: 26px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#content .landing .bottom .user .userIcon {
+    display: inline-block;
+    float: left;
+    margin: 8px;
+    width: 26px;
+    height: 26px;
+}
+
+#content .landing .bottom .phone .userIcon {
+    background: url("../images/用户名 .png") no-repeat;
+}
+
+#content .landing .bottom .password .userIcon {
+    background: url("../images/密码.png") no-repeat;
+}
+
+#content .landing .bottom .verification .userIcon {
+    background: url("../images/验证码.png") no-repeat;
+}
+
+#content .landing .bottom .user .userName {
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    border: none;
+    background-color: #dddddd;
+}
+
+#content .landing .bottom .user:hover {
+    border: 1px solid #000;
+}
+
+/*注册页面样式*/
+#content .register {
+    width: 350px;
+    height: 450px;
+    background-color: rgba(204,204,204,0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+}
+
+/*注册中*/
+
+#content .register .registering {
+    display: block;
+}
+
+#content .register .registering .top {
+    width: 100%;
+    height: 50px;
+    background-color: #8c8c8c;
+}
+
+#content .register .registering .top p {
+    line-height: 50px;
+    font-size: 22px;
+    text-align: center;
+    color: #000000;
+    opacity: 1;
+}
+
+#content .register .registering .bottom {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#content .register .registering .bottom .user {
+    margin: 18px auto 0 auto;
+    width: 270px;
+    height: 42px;
+    background-color: #dddddd;
+    border-radius: 8px;
+    opacity: 0.5;
+}
+
+#content .register .registering .bottom .password {
+    margin: 0 auto 18px auto;
+}
+
+#content .register .registering .bottom .cPsd {
+    margin: 0 auto 18px auto;
+}
+
+#content .register .registering .bottom .verification {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#content .register .registering .bottom .verification .left  {
+    display: inline-block;
+    width: 148px;
+    height: 42px;
+    overflow: hidden;
+    /*background-color: orangered;*/
+    float: left;
+}
+
+#content .register .registering .bottom .verification .left .userName {
+    width: 98px;
+}
+
+#content .register .registering .bottom .verification .right {
+    display: inline-block;
+    width: 116px;
+    height: 42px;
+    /*background-color: yellow;*/
+    float: right;
+}
+
+#content .register .registering .bottom .verification .right .code {
+    display: inline-block;
+    height: 42px;
+    width: 74px;
+    background-color: #000;
+    float: left;
+}
+
+#content .register .registering .bottom .verification .right .userIcon {
+    float: right;
+    background: url("../images/刷新.png") no-repeat;
+    cursor: pointer;
+}
+
+#content .register .registering .bottom .sub {
+    margin: 0 auto;
+}
+
+#content .register .registering .bottom .job {
+    height: 22px;
+    width: 270px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+
+#content .register .registering .bottom .jobName  {
+    margin-right: 8px;
+}
+
+#content .register .registering .bottom .appendix p {
+    margin: -2px;
+    display: inline-block;
+    font-size: 12px;
+    color: #1c4b66;
+    line-height: 39px;
+    cursor: pointer;
+}
+
+#content .register .registering .bottom .appendix {
+    height: 30px;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+}
+
+#content .register .registering .bottom .appendix .p1 {
+    color: #FFFFFF;
+}
+
+#content .register .registering .bottom .sub .registerSubmit {
+    border: none;
+    opacity: 1;
+    background-color: #0094ff;
+    color: black;
+    height: 42px;
+    width: 270px;
+    font-size: 22px;
+    line-height: 26px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+#content .register .registering .bottom .user .userIcon {
+    display: inline-block;
+    float: left;
+    margin: 8px;
+    width: 26px;
+    height: 26px;
+}
+
+#content .register .registering .bottom .phone .userIcon {
+    background: url("../images/用户名 .png") no-repeat;
+}
+
+#content .register .registering .bottom .nickname {
+    margin: 0 auto 18px 0;
+}
+
+#content .register .registering .bottom .nickname .userIcon {
+    background: url("../images/昵称1.png") no-repeat;
+}
+
+#content .register .registering .bottom .password .userIcon {
+    background: url("../images/密码.png") no-repeat;
+}
+
+#content .register .registering .bottom .cPsd .userIcon {
+    background: url("../images/密码.png") no-repeat;
+}
+
+#content .register .registering .bottom .verification .userIcon {
+    background: url("../images/验证码.png") no-repeat;
+}
+
+#content .register .registering .bottom .user .userName {
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    border: none;
+    background-color: #dddddd;
+}
+
+#content .register .registering .bottom .user:hover {
+    border: 1px solid #000;
+}
+
+/*注册成功*/
+
+#content .register .registered {
+    display: none;
+}
+
+#content .register .registered .top {
+    width: 100%;
+    height: 50px;
+    background-color: #8c8c8c;
+}
+
+#content .register .registered .top p {
+    line-height: 50px;
+    font-size: 22px;
+    text-align: center;
+    color: #000000;
+    opacity: 1;
+}
+
+#content .register .registered .bottom {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#content .register .registered .bottom  .succeed {
+    width: 270px;
+    height: 70px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -135px;
+    display: flex;
+    justify-content: center;
+}
+
+#content .register .registered .bottom  .succeed p {
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+#content .register .registered .bottom .but {
+    margin: auto;
+}
+
+#content .register .registered .bottom .but .landingButton {
+    border: none;
+    opacity: 1;
+    background-color: #0094ff;
+    color: black;
+    height: 42px;
+    width: 270px;
+    font-size: 22px;
+    line-height: 26px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+/*找回密码*/
+
+#content .find {
+    width: 350px;
+    height: 450px;
+    background-color: rgba(204,204,204,0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+}
+
+/*找回密码第一步*/
+
+#content .find .first {
+    display: block;
+}
+
+#content .find .first .top {
+    width: 100%;
+    height: 50px;
+    background-color: #8c8c8c;
+}
+
+#content .find .first .top p {
+    line-height: 50px;
+    font-size: 22px;
+    text-align: center;
+    color: #000000;
+    opacity: 1;
+}
+
+#content .find .first .bottom {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#content .find .first .bottom .user {
+    margin: 40px auto 30px auto;
+    width: 270px;
+    height: 42px;
+    background-color: #dddddd;
+    border-radius: 8px;
+    opacity: 0.5;
+}
+
+#content .find .first .bottom .verification {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#content .find .first .bottom .verification .left  {
+    display: inline-block;
+    width: 148px;
+    height: 42px;
+    overflow: hidden;
+    /*background-color: orangered;*/
+    float: left;
+}
+
+#content .find .first .bottom .verification .left .userName {
+    width: 98px;
+}
+
+#content .find .first .bottom .verification .right {
+    display: inline-block;
+    width: 116px;
+    height: 42px;
+    /*background-color: yellow;*/
+    float: right;
+}
+
+#content .find .first .bottom .verification .right .code {
+    display: inline-block;
+    height: 42px;
+    width: 74px;
+    background-color: #000;
+    float: left;
+}
+
+#content .find .first .bottom .verification .right .userIcon {
+    float: right;
+    background: url("../images/刷新.png") no-repeat;
+    cursor: pointer;
+}
+
+#content .find .first .bottom .sub {
+    margin: 0 auto;
+}
+
+#content .find .first .bottom .appendix p {
+    margin: 5px;
+    display: inline-block;
+    font-size: 12px;
+    color: #1c4b66;
+    line-height: 42px;
+    cursor: pointer;
+}
+
+#content .find .first .bottom .appendix {
+    height: 42px;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+}
+
+#content .find .first .bottom .sub .findSubmit {
+    border: none;
+    opacity: 1;
+    background-color: #0094ff;
+    color: black;
+    height: 42px;
+    width: 270px;
+    font-size: 22px;
+    line-height: 26px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+#content .find .first .bottom .user .userIcon {
+    display: inline-block;
+    float: left;
+    margin: 8px;
+    width: 26px;
+    height: 26px;
+}
+
+#content .find .first .bottom .phone .userIcon {
+    background: url("../images/用户名 .png") no-repeat;
+}
+
+#content .find .first .bottom .verification .userIcon {
+    background: url("../images/验证码.png") no-repeat;
+}
+
+#content .find .first .bottom .user .userName {
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    border: none;
+    background-color: #dddddd;
+}
+
+#content .find .first .bottom .user:hover {
+    border: 1px solid #000;
+}
+
+/*找回密码第二步*/
+
+#content .find .second {
+    display: none;
+}
+
+#content .find .second .top {
+    width: 100%;
+    height: 50px;
+    background-color: #8c8c8c;
+}
+
+#content .find .second .top p {
+    line-height: 50px;
+    font-size: 22px;
+    text-align: center;
+    color: #000000;
+    opacity: 1;
+}
+
+#content .find .second .bottom {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#content .find .second .bottom .user {
+    margin: 40px auto 30px auto;
+    width: 270px;
+    height: 42px;
+    background-color: #dddddd;
+    border-radius: 8px;
+    opacity: 0.5;
+}
+
+#content .find .second .bottom .sub {
+    margin: 0 auto;
+}
+
+#content .find .second .bottom .sub .secondSubmit {
+    border: none;
+    opacity: 1;
+    background-color: #0094ff;
+    color: black;
+    height: 42px;
+    width: 270px;
+    font-size: 22px;
+    line-height: 26px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+#content .find .second .bottom .user .userIcon {
+    display: inline-block;
+    float: left;
+    margin: 8px;
+    width: 26px;
+    height: 26px;
+}
+
+#content .find .second .bottom .user:hover {
+    border: 1px solid #000;
+}
+
+#content .find .second .bottom .appendix p {
+    margin: 5px;
+    display: inline-block;
+    font-size: 12px;
+    color: #1c4b66;
+    line-height: 42px;
+    cursor: pointer;
+}
+
+#content .find .second .bottom .appendix {
+    height: 42px;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+}
+
+#content .find .second .bottom .user .userName {
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    border: none;
+    background-color: #dddddd;
+}
+
+#content .find .second .bottom .password .userIcon {
+    background: url("../images/密码.png") no-repeat;
+}
+
+#content .find .second .bottom .cPsd .userIcon {
+    background: url("../images/密码.png") no-repeat;
+}
+
+/*找回密码第三步*/
+
+#content .find .third {
+    display: none;
+}
+
+#content .find .third .top {
+    width: 100%;
+    height: 50px;
+    background-color: #8c8c8c;
+}
+
+#content .find .third .top p {
+    line-height: 50px;
+    font-size: 22px;
+    text-align: center;
+    color: #000000;
+    opacity: 1;
+}
+#content .find .third .bottom {
+    position: relative;
+}
+
+#content .find .third .bottom  .succeed {
+    width: 270px;
+    height: 70px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -135px;
+    display: flex;
+    justify-content: center;
+}
+
+#content .find .third .bottom  .succeed p {
+    font-size: 34px;
+    margin-top: 80px;
+}
+
+#content .find .third .bottom .but {
+    display: flex;
+    justify-content: center;
+}
+
+#content .find .third .bottom .but .thirdButton {
+    border: none;
+    opacity: 1;
+    background-color: #0094ff;
+    color: black;
+    height: 42px;
+    width: 270px;
+    font-size: 22px;
+    line-height: 26px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 200px;
+}
+
+#footer .copyRight {
+    text-align: center;
+    font-size: 12px;
+    color: #969696;
+    position: relative;
+    bottom: 38px;
+}
